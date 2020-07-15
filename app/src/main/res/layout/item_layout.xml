@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:src = "@drawable/no"
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingStart="10dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:text="기생충"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"></TextView>
+        <RatingBar
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="4.5"
+            android:stepSize="0.1"
+            android:numStars="5"> </RatingBar>
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:text="2020"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:text="감독: "></TextView>
+            <TextView
+                android:id="@+id/director"
+                android:layout_width="match_parent"
+                android:text="봉준호"
+                android:singleLine="true"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:text="출연: "></TextView>
+            <TextView
+                android:id="@+id/actor"
+                android:layout_width="match_parent"
+                android:text="송강호"
+                android:singleLine="true"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

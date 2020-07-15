@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<LinearLayout
+    android:paddingTop="10dp"
+    android:background="#3b447c"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:layout_weight="1.2">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.2">
+        
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile_icon">
+        </ImageView>
+    </LinearLayout>
+
+      <LinearLayout
+          android:layout_marginStart="10dp"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:layout_weight="3">
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"></View>
+          <TextView
+              android:id="@+id/tv_detail_title"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:textSize="22dp"
+              android:gravity="center"
+              android:textColor="#ffffff"
+              android:text="해운대"></TextView>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:textColor="#ffffff"
+              android:text="2020.07.03 개봉"
+              android:id="@+id/tv_detail_date"></TextView>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:orientation="horizontal">
+              <View
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"></View>
+              <TextView
+                  android:id="@+id/tv_detail_genre"
+                  android:layout_width="wrap_content"
+
+                  android:gravity="center"
+                  android:textColor="#ffffff"
+                  android:textSize="18dp"
+                  android:layout_height="match_parent"
+                  android:text="액션"></TextView>
+              <View
+                  android:layout_width="2dp"
+                  android:background="#ffffff"
+                  android:layout_marginStart="5dp"
+                  android:layout_marginEnd="5dp"
+                  android:layout_height="match_parent"></View>
+              <TextView
+                  android:id="@+id/tv_detail_time"
+                  android:layout_width="wrap_content"
+                  android:gravity="center"
+                  android:textColor="#ffffff"
+                  android:textSize="18dp"
+                  android:layout_height="match_parent"
+                  android:text="120분"></TextView>
+              <View
+                  android:layout_width="0dp"
+
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"></View>
+          </LinearLayout>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"></View>
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:text="관람가"></TextView>
+            <TextView
+                android:id="@+id/tv_detail_age"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="15세 이상 관람가"></TextView>
+
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:background="#bdbdbd"
+            android:layout_height="match_parent"></View>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:text="평점"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></View>
+                <RatingBar
+                    android:id="@+id/rb_detail_ratingBar"
+                    android:layout_gravity="center"
+                    android:rating="4.5"
+                    android:stepSize="0.1"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/ratingBarStyleSmall"></RatingBar>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></View>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:background="#bdbdbd"
+            android:layout_height="match_parent"></View>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:text="누적 관객수"></TextView>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_detail_num"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="19,944명"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#bdbdbd"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:layout_marginStart="5dp"
+        android:text="줄거리"></TextView>
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2004년 역사상 유례없는 최대의 사상자를 내며 전세계에 엄청난 충격을 안겨준 인도네시아 쓰나미. 당시 인도양에 원양어선을 타고 나갔던 해운대 토박이 만식은 예기치 못한 쓰나미에 휩쓸리게 되고, 단 한 순간의 실수로 그가 믿고 의지했던 연희 아버지를 잃고 만다. 이 사고 때문에 그는 연희를 좋아하면서도 자신의 마음을 숨길 수 밖에 없다. 그러던 어느 날, 만식은 오랫동안 가슴 속에 담아두었던 자신의 마음을 전하기로 결심하고 연희를 위해 멋진 프로포즈를 준비한다.\n
+  한편 국제해양연구소의 지질학자 김휘 박사는 대마도와 해운대를 둘러싼 동해의 상황이 5년전 발생했던 인도네시아 쓰나미와 흡사하다는 엄청난 사실을 발견하게 된다. 그는 대한민국도 쓰나미에 안전하지 않다고 수차례 강조하지만 그의 경고에도 불구하고 재난 방재청은 지질학적 통계적으로 쓰나미가 한반도를 덮칠 확률은 없다고 단언한다. 그 순간에도 바다의 상황은 시시각각 변해가고, 마침내 김휘 박사의 주장대로 일본 대마도가 내려 앉으면서 초대형 쓰나미가 생성된다. 한여름 더위를 식히고 있는 수백만의 휴가철 인파와 평화로운 일상을 보내고 있는 부산 시민들, 그리고 이제 막 서로의 마음을 확인한 만식과 연희를 향해 초대형 쓰나미가 시속 800km의 빠른 속도로 밀려오는데…
+
+">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#bdbdbd"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginStart="5dp"
+
+            android:text="감독"
+            android:textColor="#000000"
+            android:textSize="19dp"></TextView>
+        <TextView
+            android:id="@+id/tv_detail_director"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#323235"
+            android:textSize="17dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="봉준호"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:textSize="19dp"
+            android:layout_marginStart="5dp"
+            android:text="배우"></TextView>
+        <TextView
+            android:id="@+id/tv_detail_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#323235"
+            android:textSize="17dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="염정아 강동원 공유 소지섭"></TextView>
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
